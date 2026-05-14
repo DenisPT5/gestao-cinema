@@ -48,6 +48,9 @@ COPY docker/nginx.conf /etc/nginx/nginx.conf
 COPY docker/start.sh /start.sh
 RUN chmod +x /start.sh
 
+RUN php artisan config:clear
+
 EXPOSE 8080
+
 
 CMD ["/start.sh"]
