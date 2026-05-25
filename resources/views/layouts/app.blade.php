@@ -28,11 +28,10 @@
     <a href="{{ route('users.index') }}" class="{{ request()->routeIs('users.*') ? 'active' : '' }}">👥 Contas</a>
     @endif
 
-    <span class="nav-section">Conta</span>
-    <form method="POST" action="{{ route('logout') }}">
-        @csrf
-        <a href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">🚪 Sair</a>
-    </form>
+    <form method="POST" action="{{ route('logout') }}" id="logout-form">
+    @csrf
+    <a href="#" onclick="document.getElementById('logout-form').submit(); return false;">🚪 Sair</a>
+</form>
 </div>
 
 <div class="main-content">
