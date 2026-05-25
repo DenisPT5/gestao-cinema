@@ -30,7 +30,7 @@
 
     <form method="POST" action="{{ route('logout') }}" id="logout-form">
     @csrf
-    <a href="#" onclick="document.getElementById('logout-form').submit(); return false;">🚪 Sair</a>
+    <a href="{{ route('logout') }}">🚪 Sair</a>
 </form>
 </div>
 
