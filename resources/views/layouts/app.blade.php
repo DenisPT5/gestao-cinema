@@ -12,7 +12,7 @@
         .sidebar a { display: block; padding: 12px 24px; color: #ccc; text-decoration: none; transition: all 0.2s; }
         .sidebar a:hover, .sidebar a.active { background: #e50914; color: white; padding-left: 30px; }
         .sidebar .nav-section { font-size: 0.7rem; color: #666; padding: 16px 24px 4px; text-transform: uppercase; letter-spacing: 1px; }
-        .main-content { margin-left: 250px; padding: 30px; }
+        .main-content { margin-left: 250px; padding: 30px; min-height: 100vh; width: calc(100% - 250px); box-sizing: border-box; }
         .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #333; }
         .topbar h1 { font-size: 1.6rem; color: #fff; }
         .btn { padding: 8px 18px; border-radius: 6px; border: none; cursor: pointer; font-size: 0.9rem; text-decoration: none; display: inline-block; transition: opacity 0.2s; }
