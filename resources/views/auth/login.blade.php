@@ -105,7 +105,7 @@
                     <div class="flex-grow border-t border-zinc-800"></div>
                 </div>
 
-                <a href="{{ route('registro') }}" class="block w-full border border-zinc-700 hover:border-red-500/50 text-zinc-400 hover:text-white font-bold py-4 px-4 rounded-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 text-center uppercase tracking-widest text-xs hover:bg-red-500/10">
+                <a href="{{ route('cliente.register') }}" class="block w-full border border-zinc-700 hover:border-red-500/50 text-zinc-400 hover:text-white font-bold py-4 px-4 rounded-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 text-center uppercase tracking-widest text-xs hover:bg-red-500/10">
                     Criar Conta
                 </a>
 
