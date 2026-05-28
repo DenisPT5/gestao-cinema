@@ -12,11 +12,9 @@
     <div class="auth-bg-text">CINEMA</div>
 
     <div class="auth-card" style="max-width:500px">
-        <div class="auth-logo">
-            <div class="icon">🎬</div>
-            <h1>Cine<em>Max</em></h1>
-            <p>Cria a tua conta gratuita</p>
-        </div>
+<div class="auth-logo">
+    <p style="margin-bottom:24px;color:var(--text2);font-size:1rem">Cria a tua conta gratuita</p>
+</div>
 
         @if($errors->any())
             <div class="alert alert-error">
