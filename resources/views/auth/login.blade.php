@@ -98,8 +98,26 @@
                         Iniciar Sessão
                     </button>
                 </div>
+
+                <div class="relative flex items-center py-2">
+                    <div class="flex-grow border-t border-zinc-800"></div>
+                    <span class="mx-3 text-zinc-600 text-xs uppercase tracking-widest">ou</span>
+                    <div class="flex-grow border-t border-zinc-800"></div>
+                </div>
+
+                <a href="{{ route('registro') }}" class="block w-full border border-zinc-700 hover:border-red-500/50 text-zinc-400 hover:text-white font-bold py-4 px-4 rounded-xl transform hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 text-center uppercase tracking-widest text-xs hover:bg-red-500/10">
+                    Criar Conta
+                </a>
+
             </form>
         </div>
+
+        <p class="mt-6 text-zinc-500 text-xs z-10">
+            Área do cliente? 
+            <a href="{{ route('cliente.register') }}" class="text-red-400 hover:text-red-300 hover:underline transition-colors duration-300 font-semibold">
+                Regista-te aqui →
+            </a>
+        </p>
 
         <p class="absolute bottom-6 text-[10px] text-zinc-600 tracking-widest uppercase pointer-events-none">
             Cinema Management System © {{ date('Y') }}
