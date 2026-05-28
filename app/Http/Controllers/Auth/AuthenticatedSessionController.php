@@ -22,14 +22,25 @@ class AuthenticatedSessionController extends Controller
     /**
      * Handle an incoming authentication request.
      */
-    public function store(LoginRequest $request): RedirectResponse
-    {
-        $request->authenticate();
-
-        $request->session()->regenerate();
-
-        return redirect()->intended(route('dashboard', absolute: false));
+public function store(LoginRequest $request): RedirectResponse
+{
+    // Tentar login como cliente primeiro
+    $cliente = \App\Models\Espectador::where('email', $request->email)->first();
+    
+    if ($cliente && $cliente->password && \Illuminate\Support\Facades\Hash::check($request->password, $cliente->password)) {
+        session([
+            'cliente_id'    => $cliente->cod_espectador,
+            'cliente_nome'  => $cliente->nome,
+            'cliente_email' => $cliente->email,
+        ]);
+        return redirect()->route('cliente.dashboard');
     }
+
+    // Senão tenta login como admin
+    $request->authenticate();
+    $request->session()->regenerate();
+    return redirect()->intended(route('dashboard'));
+}
 
     /**
      * Destroy an authenticated session.
