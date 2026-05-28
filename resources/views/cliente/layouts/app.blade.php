@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'CineMax') — Área do Cliente</title>
+    <title>@yield('title', 'Cinema') — Área do Cliente</title>
     <link rel="stylesheet" href="{{ asset('css/cliente.css') }}">
     @stack('styles')
 </head>
@@ -12,7 +12,7 @@
 <nav class="navbar" id="navbar">
     <a href="{{ route('cliente.dashboard') }}" class="navbar-brand">
         <div class="logo">🎬</div>
-        <span>Cine<em>Max</em></span>
+        <span>Cinema</span>
     </a>
 
     <div class="navbar-nav">

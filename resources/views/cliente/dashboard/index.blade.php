@@ -7,7 +7,7 @@
     <div class="hero-bg"></div>
     <div class="container hero-content">
         <h1>Olá, <span>{{ explode(' ', $cliente->nome)[0] }}</span> 👋</h1>
-        <p>Bem-vindo de volta ao CineMax. Descobre os filmes em cartaz e compra os teus bilhetes.</p>
+        <p>Bem-vindo de volta ao Cinema. Descobre os filmes em cartaz e compra os teus bilhetes.</p>
         <div class="hero-stats">
             <div class="hero-stat">
                 <div class="number">{{ $totalBilhetes }}</div>
